@@ -1,5 +1,10 @@
-// Declare your function here
+function createLongGreeting(nane){// Declare your function here
+return name = "Daniel";
 
-const greeting = createLongGreeting("Daniel", 30);
+}
+var number = 30;
 
-console.log(greeting);
+var greeting = createLongGreeting("Daniel");
+
+console.log("Hello, my name is",greeting,"and I am ",number," years old");
+
