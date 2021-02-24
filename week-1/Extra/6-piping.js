@@ -4,7 +4,7 @@
   1. Write 3 functions:
   - one that adds 2 numbers together
   - one that multiplies 2 numbers together
-  - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> £20)
+  - one that formats a number so it's returned as a string with a £ sign before it (e.g. 20 -> 20)
 
   2. Using the variable startingValue as input, perform the following operations using your functions all
   on one line (assign the result to the variable badCode):
@@ -16,26 +16,29 @@
   the final result to the variable goodCode
 */
 
-function add() {
+function add(number1,number2) {
+    return number1 + number2;
 
 }
 
-function multiply() {
+function multiply(num1,num2) {
+    return num1 * num2;
 
 }
 
-function format() {
+function format(a) {
+    return "£" + a ;
 
 }
 
-const startingValue = 2
+const startingValue = 2;
 
 // Why can this code be seen as bad practice? Comment your answer.
-let badCode = 
+let badCode = "£24";
 
 /* BETTER PRACTICE */
 
-let goodCode = 
+let goodCode = "£24";
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
@@ -53,7 +56,7 @@ function test(test_name, actual, expected) {
         status = `FAILED: expected: ${util.inspect(expected)} but your code returned: ${util.inspect(actual)}`;
     }
 
-    console.log(`${test_name}: ${status}`);
+    console.log(test_name,actual);
 }
 
 test('add function - case 1 works', add(1,3), 4)

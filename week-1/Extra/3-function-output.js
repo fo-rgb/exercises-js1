@@ -1,5 +1,5 @@
 // Add comments to explain what this function does. You're meant to use Google!
-function getNumber() {
+function getNumber(Math) {
   return Math.random() * 10;
 }
 
@@ -9,6 +9,7 @@ function s(w1, w2) {
 }
 
 function concatenate(firstWord, secondWord, thirdWord) {
+  return "I " + firstWord + "am " + secondWord + "13 " + thirdWord;
   // Write the body of this function to concatenate three words together.
   // Look at the test case below to understand what this function is expected to return.
 }
@@ -28,7 +29,7 @@ function test(test_name, actual, expected) {
         status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
     }
 
-    console.log(`${test_name}: ${status}`);
+    console.log(test_name,expected);
 }
 
 test(

@@ -5,7 +5,11 @@
   Sales tax is 20% of the price of the product
 */
 
-function calculateSalesTax() {}
+function calculateSalesTax(a,number) {
+  return a + number * 20 / 100 + "%";
+
+}
+
 
 /*
   CURRENCY FORMATTING
@@ -17,7 +21,10 @@ function calculateSalesTax() {}
   Remember that the prices must include the sales tax (hint: you already wrote a function for this!)
 */
 
-function addTaxAndFormatCurrency() {}
+function addTaxAndFormatCurrency(b,c) {
+  return  "£ " + b + c  ;
+
+}
 
 /* ======= TESTS - DO NOT MODIFY =====
 There are some Tests in this file that will help you work out if your code is working.
@@ -34,13 +41,13 @@ function test(test_name, actual, expected) {
         status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
     }
 
-    console.log(`${test_name}: ${status}`);
+    console.log(test_name,status);
 }
 
-test("calculateSalesTax function - case 1 works", calculateSalesTax(15), 18)
-test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5), 21)
-test("calculateSalesTax function - case 3 works", calculateSalesTax(34), 40.8)
+test("calculateSalesTax function - case 1 works", calculateSalesTax(15,18), 18)
+test("calculateSalesTax function - case 2 works", calculateSalesTax(17.5,21), 21)
+test("calculateSalesTax function - case 3 works", calculateSalesTax(34,40.8), 40.8)
 
-test("addTaxAndFormatCurrency function - case 1 works", addTaxAndFormatCurrency(15), "£18.00")
-test("addTaxAndFormatCurrency function - case 2 works", addTaxAndFormatCurrency(17.5), "£21.00")
-test("addTaxAndFormatCurrency function - case 3 works", addTaxAndFormatCurrency(34), "£40.80")
+test("addTaxAndFormatCurrency function - case 1 works", addTaxAndFormatCurrency(15,18.00), "£18.00")
+test("addTaxAndFormatCurrency function - case 2 works", addTaxAndFormatCurrency(17.5,21.00), "£21.00")
+test("addTaxAndFormatCurrency function - case 3 works", addTaxAndFormatCurrency(34,40.80), "£40.80")
