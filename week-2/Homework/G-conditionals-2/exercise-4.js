@@ -9,7 +9,8 @@
 */
 
 function containsCode(sentence) {
-
+  var palabra="code";
+  return sentence.includes(palabra)
 }
 
 /* 

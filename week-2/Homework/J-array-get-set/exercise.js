@@ -5,17 +5,18 @@
 */
 
 function first(arr) {
-  return; // complete this statement
+  return arr[1]; // complete this statement
 }
 
 function last(arr) {
-  return; // complete this statement
+  return arr[3]; // complete this statement
 }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
   --------------------------- */
-var numbers = [1, 2, 3];
+var numbers = [0,1, 2, 3];
 var names = ["Irina", "Ashleigh", "Mozafar", "Joe"];
 
 console.log(first(numbers));

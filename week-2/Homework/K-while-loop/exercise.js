@@ -8,8 +8,19 @@
 
 let n = 10;
 
+
 function sumTillNum(num){
+	
 	//your code here
+	let adds= [0];
+	while(adds<=100 ){
+		
+	adds +=1;
+	
+
+		
+	}
+	return adds;
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));

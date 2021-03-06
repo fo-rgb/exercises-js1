@@ -10,6 +10,12 @@ let n = 10;
 
 function sumTillNum(num){
 	//your code here
+	let suma= [0];
+	for(i=0; i<=num; i++){
+		suma.push(i);
+		
+	}
+	return suma;
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));

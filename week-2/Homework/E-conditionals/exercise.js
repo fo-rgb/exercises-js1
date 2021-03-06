@@ -6,8 +6,29 @@
   If Daniel is a student, print out "Hi, I'm Daniel, I'm a student."
 */
 
-var name = "Daniel";
-var danielsRole = "mentor";
+
+
+
+var name = ["Daniel"];
+var danielsRole =["mentor ", "student "] ;
+
+
+
+
+
+  if( danielsRole = "Daniel"){
+      console.log( "Hi, I'm Daniel, I'm a mentor. ")
+    
+      
+
+  } 
+  else  if(danielsRole =""){
+      console.log( "Hi, I'm Daniel, I'm a student.")
+     
+  }
+ 
+
+
 
 /* 
 EXPECTED RESULT
