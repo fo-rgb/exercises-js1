@@ -1,5 +1,5 @@
 function secondMatchesAmy(array) {
-  if ( array === "Amy") {
+  if ( array[1] === "Amy") {
     return "Second index matched!";
    } 
    
@@ -9,10 +9,11 @@ function secondMatchesAmy(array) {
 
 let names = ["Alex", "Amara", "Carlos"];
 let names2 = ["Ali", "Amy", "Naresh"];
-const result = secondMatchesAmy("Amy");
+const result = secondMatchesAmy(names2);
 console.log(result)
 
 
+//Ejemplo 2
 
 
 
