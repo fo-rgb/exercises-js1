@@ -3,13 +3,39 @@
   Using .find(), we'd like to find the first name which starts with A and is longer than 7 letters.
 */
 
-// write your code here
+// write your code herevar
+const names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
 
-var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "Anastasia", "Karim", "Ahmed"];
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
 
-console.log(longNameThatStartsWithA);
+function isLongName(name) {
+  return name.length > 7;
+}
+
+var longName = names.find(isLongName);
+
+console.log(longName);
+
+
+
+
+
+function ThatStartsWithA(){
+  
+
+var longNameThatStartsWithB =names.find();
+return longNameThatStartsWithB;
+}
+
+let glovo = names.find((nom) => nom );
+  
+    glovo=names[2] ;
+    glovo1= names[2].length;
+
+console.log(glovo,glovo1);
+
+
 
 /* EXPECTED OUTPUT */
 // "Alexandra"
+

@@ -8,14 +8,21 @@
 
 var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
 
-var pairsByIndex; // Complete this statement
+var pairsByIndex =[90, 50, 100, 66, 25, 80, 81];
+function pairings(score) {
+  return score > 80;
+}
+var highTestScores = pairsByIndex.filter(pairings);
+console.log(highTestScores);
+
+// Complete this statement
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];
 var mentors = ["Daniel", "Irina", "Mozafar", "Luke"];
 
-var pairs = pairsByIndex.map(function(indexes) {
-  var student = students[indexes[0]];
-  var mentor = mentors[indexes[1]];
+var pairs = pairsByIndexRaw.map(function() {
+  var student =students [0].concat();
+  var mentor =mentors[1].concat();
   return [student, mentor];
 });
 
