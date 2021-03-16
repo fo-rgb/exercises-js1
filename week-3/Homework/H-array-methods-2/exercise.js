@@ -15,8 +15,8 @@ var everyone = [
   "Swathi"
 ];
 
-var firstFive=everyone.concat(); // complete this statement
-var lastFive=everyone.concat(); // complete this statement
+var firstFive=everyone.slice(0,5); // complete this statement
+var lastFive=everyone.slice(2); // complete this statement
 
 /* 
   DO NOT EDIT BELOW THIS LINE
