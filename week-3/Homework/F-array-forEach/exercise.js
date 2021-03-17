@@ -7,29 +7,46 @@
   An array with numbers 1-15 has been provided.
 */
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]; 
+
+//
 
 
 
-arr.forEach(function(arr, index) {
-  console.log(index + ": " + arr);
-});
+arr.forEach(function(numero) {
+
+  
+  if (numero % 3 == 0 ) {
+    console.log( "Fizz");
+    
+  }
+
+  else if (numero % 5 == 0) {
+    console.log("Buzz");
+    
+  }
+
+  else if (numero % 3 ==3   || numero % 5 ==5) {
+    console.log( "FizzBuzz");
+    
+  }
 
 
-
-
-arr.forEach(function(arr) {
-  console.log( arr);
-  return 
+  else   {
+    console.log( numero);
+    
+  } 
   
 });
 
 
 
 
-//function formatName(arr) {
- // return arr.split("")[0].toUpperCase() + arr.slice(1);
-//}
+
+
+
+
+
 
 
 /* EXPECTED OUTPUT */
